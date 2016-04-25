@@ -24,6 +24,7 @@ namespace Apresentacao_GUI
             InitializeComponent();
         }
 
+        //CONFIG DA JANELA
         //para pode arrastar a janela
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -57,6 +58,35 @@ namespace Apresentacao_GUI
         {
             img_minimizar.Opacity = 1;
         }
+        //CONFIG JANELA
 
+
+        //btn VENDA PRODUTO
+        private void btn_VendaProduto_Click(object sender, RoutedEventArgs e)
+        {
+            VendaProdutos vendaProdutos = new VendaProdutos();
+            vendaProdutos.Show();
+        }
+
+        //btn ITENS VENDIDOS
+        private void btn_ItensVendidos_Click(object sender, RoutedEventArgs e)
+        {
+            ItensVendidos itensVendidos = new ItensVendidos();
+            itensVendidos.Show();
+        }
+
+        //btn CATEGORIA PRODUTO
+        private void btn_CategoriaProduto_Click(object sender, RoutedEventArgs e)
+        {
+            EstoqueCategoria categoriaProduto = new EstoqueCategoria();
+            categoriaProduto.Show();
+        }
+
+        //btn COMPRAS PRODUTOS
+        private void btn_CompraProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            CompraProdutos compraProduto = new CompraProdutos();
+            compraProduto.Show();
+        }
     }
 }

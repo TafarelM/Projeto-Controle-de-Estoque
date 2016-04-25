@@ -23,3 +23,4 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresent
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.csproj.GenerateResource.Cache
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.exe
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.csprojResolveAssemblyReference.cache
