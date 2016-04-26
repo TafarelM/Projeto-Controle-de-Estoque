@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
         Title="Menu" Height="600" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <!--grind main-->
     <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
         <Grid x:Name="grid_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
             <Grid Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
@@ -15,6 +16,7 @@
         </Grid>
         <!--dashboard-->
         <Grid x:Name="grid_dashboard" HorizontalAlignment="Left" Height="570" Margin="0,30,0,0" VerticalAlignment="Top" Width="200" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+            
             <!--info user-->
             <Grid x:Name="info_user" HorizontalAlignment="Left" Height="199" Margin="20,42,0,0" VerticalAlignment="Top" Width="160" Background="#FFFFE8E8">
                 <Label x:Name="lbl_idUser" Content="Tafarel Mello" HorizontalAlignment="Left" Margin="30,0,0,55" VerticalAlignment="Bottom" RenderTransformOrigin="-0.26,-1.617" Width="100" FontFamily="Segoe UI Symbol" FontSize="14"/>

@@ -24,3 +24,7 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresent
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.exe
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.pdb
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.csprojResolveAssemblyReference.cache
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\ManterProduto.g.cs
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Produtos.g.cs
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\ManterProduto.baml
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Produtos.baml
