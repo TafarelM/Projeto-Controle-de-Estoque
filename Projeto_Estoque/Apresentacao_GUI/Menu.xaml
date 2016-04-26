@@ -5,64 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
-        Title="Menu" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="grid_principal" RenderTransformOrigin="0.505,0.03">
-        <Border Margin="0,0,0,562">
-            <Border>
-                <Rectangle x:Name="cabeca_janela" Fill="#FF6C85B2" Stroke="Black" StrokeThickness="0"/>
-            </Border>
-        </Border>
-        <Image x:Name="img_close" Margin="0,4,9,566" Source="img/close_on.png" RenderTransformOrigin="1.068,0.509" MouseLeftButtonDown="image_close_MouseLeftButtonDown" HorizontalAlignment="Right" Width="26" MouseLeave="img_close_MouseLeave" MouseMove="img_close_MouseMove"/>
-        <Image x:Name="img_minimizar" Margin="0,4,44,565" Source="img/minimizar_on.png" RenderTransformOrigin="-11.038,8.823" HorizontalAlignment="Right" Width="26" MouseLeftButtonDown="image1_MouseLeftButtonDown" MouseLeave="imageMinimizar_MouseLeave" MouseMove="img_minimizar_MouseMove"/>
-        <Rectangle x:Name="Dashbord" HorizontalAlignment="Left" Margin="0,38,0,0" Stroke="Black" Width="180" Fill="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Stretch="None"/>
-        <DockPanel Margin="0,38,616,0">
-            <Grid Width="184">
-                <Grid>
-                    <DockPanel>
-                        <Rectangle x:Name="DashBoard" Fill="#FFA9BDE0" HorizontalAlignment="Left" Height="562" Stroke="#FFC0C3C9" VerticalAlignment="Top" Width="184"/>
-                    </DockPanel>
-                </Grid>
-                <WrapPanel Margin="20,71,20,333" Orientation="Vertical">
-                    <Grid Height="181" Width="148" Margin="0"/>
-                </WrapPanel>
+        Title="Menu" Height="600" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
+        <Grid x:Name="grid_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
+            <Grid Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
+                <Ellipse x:Name="btn_close" Fill="#FFF13B05" HorizontalAlignment="Right" Margin="0,2,2,0" Width="18" Height="18" VerticalAlignment="Top" MouseLeftButtonDown="btn_close_MouseLeftButtonDown" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.6"/>
+                <Ellipse x:Name="btn_minimizer" Fill="#FF23C72B" HorizontalAlignment="Left" Height="18" Margin="2,2,0,0" VerticalAlignment="Top" Width="18" MouseLeave="btn_minimizer_MouseLeave" MouseLeftButtonDown="btn_minimizer_MouseLeftButtonDown" MouseMove="btn_minimizer_MouseMove" Opacity="0.6"/>
             </Grid>
-            <Rectangle Fill="#FF3E71CB" Height="145" Margin="0,66,0,0" Stroke="#FF164095" VerticalAlignment="Top" Width="170"/>
-        </DockPanel>
-        <Grid Margin="0,38,616,507">
-            <Rectangle x:Name="Dashboard_title" Fill="#FF3E71CB" Stroke="#FF164095"/>
-            <Label x:Name="lbl_title_dashboard" Content="DASHBOARD" HorizontalAlignment="Center" Margin="48,15,42,11" Width="94" FontWeight="Bold"/>
         </Grid>
-        <Button x:Name="btn_VendaProduto" Content="Venda dos Produtos" Margin="20,362,0,0" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontWeight="Bold" BorderThickness="2" Click="btn_VendaProduto_Click">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="2"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="btn_ItensVendidos" Content="Itens Vendidos" Margin="20,395,0,0" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontWeight="Bold" BorderThickness="2" Click="btn_ItensVendidos_Click">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="2"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="btn_CategoriaProduto" Content="Categoria de Produtos" Margin="20,431,0,0" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontWeight="Bold" BorderThickness="2" Click="btn_CategoriaProduto_Click">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="2"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="btn_CompraProdutos" Content="Compra de Produtos" Margin="20,467,0,0" Width="140" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontWeight="Bold" BorderThickness="2" Click="btn_CompraProdutos_Click">
-            <Button.Effect>
-                <DropShadowEffect BlurRadius="2"/>
-            </Button.Effect>
-        </Button>
-        <Grid Margin="44,116,656,384">
-            <Ellipse Height="100" Stroke="#FF010713" Width="100">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="img/user.png"/>
-                </Ellipse.Fill>
-            </Ellipse>
+        <!--dashboard-->
+        <Grid x:Name="grid_dashboard" HorizontalAlignment="Left" Height="570" Margin="0,30,0,0" VerticalAlignment="Top" Width="200" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+            <!--info user-->
+            <Grid x:Name="info_user" HorizontalAlignment="Left" Height="199" Margin="20,42,0,0" VerticalAlignment="Top" Width="160" Background="#FFFFE8E8">
+                <Label x:Name="lbl_idUser" Content="Tafarel Mello" HorizontalAlignment="Left" Margin="30,0,0,55" VerticalAlignment="Bottom" RenderTransformOrigin="-0.26,-1.617" Width="100" FontFamily="Segoe UI Symbol" FontSize="14"/>
+                <Ellipse x:Name="foto_user" HorizontalAlignment="Center" Height="100" Margin="30,10,30,0" VerticalAlignment="Top" Width="100" StrokeThickness="2">
+                    <Ellipse.Stroke>
+                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                    </Ellipse.Stroke>
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="img/user.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="opc_2" HorizontalAlignment="Left" Height="22" Margin="84,168,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.362,-0.582" Fill="#FF2E8515">
+                    <Ellipse.Stroke>
+                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                    </Ellipse.Stroke>
+                </Ellipse>
+                <Ellipse x:Name="opc_1" HorizontalAlignment="Left" Height="22" Margin="55,168,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.362,-0.582" Fill="#FF0E8138">
+                    <Ellipse.Stroke>
+                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                    </Ellipse.Stroke>
+                </Ellipse>
+            </Grid>
+            <!---->
+            
+            <!--btns-->
+            <Grid HorizontalAlignment="Left" Height="180" Margin="20,278,0,0" VerticalAlignment="Top" Width="160" Background="#FFEAB7B7">
+                <Button x:Name="btn_vendaProduto" Content="Venda Produto" HorizontalAlignment="Left" Margin="10,10,0,0" Width="140" VerticalAlignment="Top"/>
+                <Button x:Name="btn_categoriaProdutos" Content="Categoria Produtos" HorizontalAlignment="Left" Margin="10,64,0,2" Width="140" VerticalAlignment="Top"/>
+                <Button x:Name="btn_itensVendidos" Content="Itens Vendidos" HorizontalAlignment="Left" Margin="10,37,0,2" Width="140" VerticalAlignment="Top"/>
+                <Button x:Name="btn_comprasProdutos" Content="Compras Produtos" HorizontalAlignment="Left" Margin="10,91,0,0" Width="140" VerticalAlignment="Top"/>
+            </Grid>
+            <!---->
+
         </Grid>
-
-        <!-- inf usuario-->
-        <Grid Margin="58,230,658,344" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <!-- fim inf usario-->
-
-    </Grid>
+        <!--fim dashboard-->
+        </Grid>
 </Window>

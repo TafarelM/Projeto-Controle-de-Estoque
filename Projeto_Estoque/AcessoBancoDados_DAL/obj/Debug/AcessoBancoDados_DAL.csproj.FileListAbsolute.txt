@@ -2,3 +2,5 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBa
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBancoDados_DAL\bin\Debug\AcessoBancoDados_DAL.pdb
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBancoDados_DAL\obj\Debug\AcessoBancoDados_DAL.dll
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBancoDados_DAL\obj\Debug\AcessoBancoDados_DAL.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBancoDados_DAL\bin\Debug\AcessoBancoDados_DAL.dll.config
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\AcessoBancoDados_DAL\obj\Debug\AcessoBancoDados_DAL.csprojResolveAssemblyReference.cache

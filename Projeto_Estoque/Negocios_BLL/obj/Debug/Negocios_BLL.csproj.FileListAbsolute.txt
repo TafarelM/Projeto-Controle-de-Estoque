@@ -2,3 +2,4 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\Negocios_BLL.pdb
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.dll
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.csprojResolveAssemblyReference.cache
