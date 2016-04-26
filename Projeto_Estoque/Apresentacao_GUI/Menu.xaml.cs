@@ -58,68 +58,37 @@ namespace Apresentacao_GUI
             this.WindowState = WindowState.Minimized;
         }
 
-
         //config janela
 
-        /*
-
-//fechar
-private void image_close_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-{
-this.Close();
-}
-private void img_close_MouseLeave(object sender, MouseEventArgs e)
-{
-img_close.Opacity = 0.6;
-}
-private void img_close_MouseMove(object sender, MouseEventArgs e)
-{
-img_close.Opacity = 1;
-}
-
-//minimizar
-private void image1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-{
-this.WindowState = WindowState.Minimized;
-}
-private void imageMinimizar_MouseLeave(object sender, MouseEventArgs e)
-{
-img_minimizar.Opacity = 0.6;
-}
-private void img_minimizar_MouseMove(object sender, MouseEventArgs e)
-{
-img_minimizar.Opacity = 1;
-}
-//CONFIG JANELA
 
 
-//btn VENDA PRODUTO
-private void btn_VendaProduto_Click(object sender, RoutedEventArgs e)
-{
-VendaProdutos vendaProdutos = new VendaProdutos();
-vendaProdutos.Show();
-}
+        //btn VENDA PRODUTO
+        private void btn_VendaProduto_Click(object sender, RoutedEventArgs e)
+        {
+        VendaProdutos vendaProdutos = new VendaProdutos();
+        vendaProdutos.Show();
+        }
 
-//btn ITENS VENDIDOS
-private void btn_ItensVendidos_Click(object sender, RoutedEventArgs e)
-{
-ItensVendidos itensVendidos = new ItensVendidos();
-itensVendidos.Show();
-}
+        //btn ITENS VENDIDOS
+        private void btn_ItensVendidos_Click(object sender, RoutedEventArgs e)
+        {
+        ItensVendidos itensVendidos = new ItensVendidos();
+        itensVendidos.Show();
+        }
 
-//btn CATEGORIA PRODUTO
-private void btn_CategoriaProduto_Click(object sender, RoutedEventArgs e)
-{
-EstoqueCategoria categoriaProduto = new EstoqueCategoria();
-categoriaProduto.Show();
-}
+        //btn CATEGORIA PRODUTO
+        private void btn_CategoriaProdutos_Click(object sender, RoutedEventArgs e)
+        {
+        EstoqueCategoria categoriaProduto = new EstoqueCategoria();
+        categoriaProduto.Show();
+        }
 
-//btn COMPRAS PRODUTOS
-private void btn_CompraProdutos_Click(object sender, RoutedEventArgs e)
-{
-CompraProdutos compraProduto = new CompraProdutos();
-compraProduto.Show();
-}
-*/
+        //btn COMPRAS PRODUTOS
+        private void btn_ComprasProdutos_Click(object sender, RoutedEventArgs e)
+        {
+        CompraProdutos compraProduto = new CompraProdutos();
+        compraProduto.Show();
+        }
+
     }
 }

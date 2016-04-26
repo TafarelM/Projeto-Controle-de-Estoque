@@ -26,25 +26,32 @@
                         <ImageBrush ImageSource="img/user.png"/>
                     </Ellipse.Fill>
                 </Ellipse>
-                <Ellipse x:Name="opc_2" HorizontalAlignment="Left" Height="22" Margin="84,168,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.362,-0.582" Fill="#FF2E8515">
-                    <Ellipse.Stroke>
-                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                    </Ellipse.Stroke>
-                </Ellipse>
-                <Ellipse x:Name="opc_1" HorizontalAlignment="Left" Height="22" Margin="55,168,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.362,-0.582" Fill="#FF0E8138">
-                    <Ellipse.Stroke>
-                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                    </Ellipse.Stroke>
-                </Ellipse>
+                <Grid x:Name="grip_opc_user" HorizontalAlignment="Left" Height="30" Margin="30,155,0,0" VerticalAlignment="Top" Width="100" Background="#FFC8C2D3">
+                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="8,5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
+                        <Ellipse.Stroke>
+                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                        </Ellipse.Stroke>
+                    </Ellipse>
+                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="40,5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
+                        <Ellipse.Stroke>
+                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                        </Ellipse.Stroke>
+                    </Ellipse>
+                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="70,5,8,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
+                        <Ellipse.Stroke>
+                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                        </Ellipse.Stroke>
+                    </Ellipse>
+                </Grid>
             </Grid>
             <!---->
             
             <!--btns-->
             <Grid HorizontalAlignment="Left" Height="180" Margin="20,278,0,0" VerticalAlignment="Top" Width="160" Background="#FFEAB7B7">
-                <Button x:Name="btn_vendaProduto" Content="Venda Produto" HorizontalAlignment="Left" Margin="10,10,0,0" Width="140" VerticalAlignment="Top"/>
-                <Button x:Name="btn_categoriaProdutos" Content="Categoria Produtos" HorizontalAlignment="Left" Margin="10,64,0,2" Width="140" VerticalAlignment="Top"/>
-                <Button x:Name="btn_itensVendidos" Content="Itens Vendidos" HorizontalAlignment="Left" Margin="10,37,0,2" Width="140" VerticalAlignment="Top"/>
-                <Button x:Name="btn_comprasProdutos" Content="Compras Produtos" HorizontalAlignment="Left" Margin="10,91,0,0" Width="140" VerticalAlignment="Top"/>
+                <Button x:Name="btn_vendaProduto" Content="Venda Produto" HorizontalAlignment="Left" Margin="10,10,0,0" Width="140" VerticalAlignment="Top" Click="btn_VendaProduto_Click"/>
+                <Button x:Name="btn_categoriaProdutos" Content="Categoria Produtos" HorizontalAlignment="Left" Margin="10,64,0,2" Width="140" VerticalAlignment="Top" Click="btn_CategoriaProdutos_Click"/>
+                <Button x:Name="btn_itensVendidos" Content="Itens Vendidos" HorizontalAlignment="Left" Margin="10,37,0,2" Width="140" VerticalAlignment="Top" Click="btn_ItensVendidos_Click"/>
+                <Button x:Name="btn_ComprasProdutos" Content="Compras Produtos" HorizontalAlignment="Left" Margin="10,91,0,0" Width="140" VerticalAlignment="Top" Click="btn_ComprasProdutos_Click"/>
             </Grid>
             <!---->
 
