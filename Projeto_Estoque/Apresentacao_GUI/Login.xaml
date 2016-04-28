@@ -5,4 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300" ResizeMode="NoResize" WindowStyle="None"/>
+        Title="Login" Height="400" Width="600" ResizeMode="NoResize" WindowStyle="None">
+
+
+    <Window.Resources>
+        <Style x:Key="AllStyles">
+            <Setter Property="Border.Height" Value="35"/>
+            <Setter Property="Border.BorderBrush" Value="blue"/>
+            <Setter Property="Border.BorderThickness" Value="2"/>
+            <Setter Property="Border.CornerRadius" Value="15"/>
+            <Setter Property="Border.Background" Value="#FF7C98D3"/>
+            <Setter Property="Button.Margin" Value="5"/>
+            <Setter Property="Button.FontSize" Value="16"/>
+            <Setter Property="Rectangle.Fill" Value="Wheat"/>
+            <Setter Property="Rectangle.Height" Value="35"/>
+        </Style>
+    </Window.Resources>
+
+    <Border x:Name="border_principal">
+        <Grid x:Name="grid_principal" Background="#FFD6B6B6">
+            <Grid x:Name="grid_login" Margin="110,0,0,110" Height="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="330" Background="#FFE6DBC0">
+                <Grid x:Name="grid_btns" Margin="20,140,100,10" Background="#FFF7EFEF">
+
+                    <StackPanel Margin="10,10,0,0" HorizontalAlignment="Left" Width="205">
+                        <Button x:Name="btn_login" Style="{StaticResource AllStyles}" Content="Login" Margin="5,5,0,5" Height="35" HorizontalAlignment="Left" Width="175" VerticalAlignment="Top"/>
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

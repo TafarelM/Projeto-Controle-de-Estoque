@@ -33,13 +33,13 @@ namespace Apresentacao_GUI
         //close
         private void btn_close_MouseLeave(object sender, MouseEventArgs e)
         {
-            btn_close.Opacity = 0.6;
+            btn_close.Opacity = 0.7;
         }
         private void btn_close_MouseMove(object sender, MouseEventArgs e)
         {
             btn_close.Opacity = 1;
         }
-        private void btn_close_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
@@ -47,19 +47,34 @@ namespace Apresentacao_GUI
         //minimizar
         private void btn_minimizer_MouseLeave(object sender, MouseEventArgs e)
         {
-            btn_minimizer.Opacity = 0.6;
+            btn_minimizer.Opacity = 0.7;
         }
         private void btn_minimizer_MouseMove(object sender, MouseEventArgs e)
         {
             btn_minimizer.Opacity = 1;
         }
-        private void btn_minimizer_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_minimizer_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
+        //FIM CONFIG JANELA
 
-        //CONFIG JANELA
+        //BTNS
+        private void btn_salvar_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void btn_limpar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_sair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        //FIM BTNS
 
     }
 }

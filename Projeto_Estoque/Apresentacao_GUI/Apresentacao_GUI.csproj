@@ -62,6 +62,9 @@
     <Compile Include="CompraProdutos.xaml.cs">
       <DependentUpon>CompraProdutos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarProdutos.xaml.cs">
+      <DependentUpon>ConsultarProdutos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EstoqueCategoria.xaml.cs">
       <DependentUpon>EstoqueCategoria.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,15 @@
     </Compile>
     <Compile Include="Produtos.xaml.cs">
       <DependentUpon>Produtos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserConfig.xaml.cs">
+      <DependentUpon>UserConfig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserOpcao.xaml.cs">
+      <DependentUpon>UserOpcao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserPerfil.xaml.cs">
+      <DependentUpon>UserPerfil.xaml</DependentUpon>
     </Compile>
     <Compile Include="VendaProdutos.xaml.cs">
       <DependentUpon>VendaProdutos.xaml</DependentUpon>
@@ -119,6 +131,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ConsultarProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EstoqueCategoria.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -144,6 +160,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Produtos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserConfig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserOpcao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPerfil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

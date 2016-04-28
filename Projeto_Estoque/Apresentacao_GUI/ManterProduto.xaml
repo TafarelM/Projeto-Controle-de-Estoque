@@ -6,52 +6,84 @@
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
         Title="ManterProduto" Height="600" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
-    <!--Grid main-->
+
+    <!--grind main-->
     <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
-        <Grid x:Name="grid_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3" d:IsLocked="True">
-            <Grid Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
-                <Ellipse x:Name="btn_close" Fill="#FFF13B05" HorizontalAlignment="Right" Margin="0,2,2,0" Width="18" Height="18" VerticalAlignment="Top" MouseLeftButtonDown="btn_close_MouseLeftButtonDown" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.6"/>
-                <Ellipse x:Name="btn_minimizer" Fill="#FF23C72B" HorizontalAlignment="Left" Height="18" Margin="2,2,0,0" VerticalAlignment="Top" Width="18" MouseLeave="btn_minimizer_MouseLeave" MouseLeftButtonDown="btn_minimizer_MouseLeftButtonDown" MouseMove="btn_minimizer_MouseMove" Opacity="0.6"/>
-            </Grid>
-        </Grid>
 
-        <!--grid principal-->
-        <Grid x:Name="grid_principal" Margin="0,30,0,0">
-            <Grid x:Name="grid_form" HorizontalAlignment="Left" Height="345" Margin="50,53,0,0" VerticalAlignment="Top" Width="687" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
-                <Grid x:Name="itensForm" HorizontalAlignment="Left" Height="185" VerticalAlignment="Top" Width="686" Background="#FFCFCFCF">
-                    <TextBox x:Name="txt_subCategoria" HorizontalAlignment="Left" Height="23" Margin="395,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <Label x:Name="lbl_categoria" Content="Categoria" HorizontalAlignment="Left" Margin="275,112,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_unidadeMedida" Content="Unidade de Medida" HorizontalAlignment="Left" Margin="270,83,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_qtd" Height="23" Margin="112,143,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_valorVenda" Height="23" Margin="112,111,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_valorPago" Height="23" Margin="112,80,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_unidadeMedida" Height="23" Margin="395,82,171,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_nome" Height="23" Margin="112,47,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_idProduto" Height="23" Margin="112,14,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_descricao" Content="Descrição" HorizontalAlignment="Left" Margin="267,30,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_idProduto1" Content="Id Produto" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_idProduto" Content="Id Produto" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_nome" Content="Nome" HorizontalAlignment="Left" Margin="21,43,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_valorPago" Content="Valor Pago" HorizontalAlignment="Left" Margin="21,75,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbl_valorVenda" Content="Valor Venda" HorizontalAlignment="Left" Margin="21,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.539,-2.598"/>
-                    <Label x:Name="lbl_qtd" Content="Quantidade" HorizontalAlignment="Left" Margin="21,140,0,0" VerticalAlignment="Top"/>
-                    <RichTextBox x:Name="txtr_descricao" HorizontalAlignment="Left" Height="60" Margin="353,12,0,0" VerticalAlignment="Top" Width="293">
-                        <FlowDocument/>
-                    </RichTextBox>
-                    <Label x:Name="lbl_subCategoria" Content="SubCategoria" HorizontalAlignment="Left" Margin="272,144,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt_categoria" HorizontalAlignment="Left" Height="23" Margin="395,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                </Grid>
-                <Grid x:Name="btn_form" HorizontalAlignment="Left" Height="70" Margin="177,256,0,0" VerticalAlignment="Top" Width="510" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
-                    <Button x:Name="btn_inserir" Content="Inserir" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
-                    <Button x:Name="btn_alterar" Content="Alterar" HorizontalAlignment="Left" Margin="113,22,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
-                    <Button x:Name="btn_consultar" Content="Consultar" HorizontalAlignment="Left" Margin="213,22,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
-                    <Button x:Name="btn_excluir" Content="Excluir" HorizontalAlignment="Left" Margin="311,22,0,0" VerticalAlignment="Top" Width="90" Height="30" RenderTransformOrigin="0.565,-0.306"/>
-                    <Button x:Name="btn_sair" Content="Sair" HorizontalAlignment="Left" Margin="410,22,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
+        <!--janela/window customizada-->
+        <Border x:Name="border_cabecalho_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
+            <Grid x:Name="grid_window">
+                <Grid x:Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
+                    <!--btn close-->
+                    <Button x:Name="btn_close" Width="18" Height="18" Margin="30,2,2,2" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.7" Click="btn_close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FFF13B05"/>
+                                    <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!--btn minimizar-->
+                    <Button x:Name="btn_minimizer" Width="18" Height="18" Margin="2,2,30,2" MouseLeave="btn_minimizer_MouseLeave" MouseMove="btn_minimizer_MouseMove" Opacity="0.7" Click="btn_minimizer_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FF23C72B"/>
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </Grid>
             </Grid>
+        </Border>
+        <!--FIM JANELA/WINDOW CUSTOMIZADA-->
 
-        </Grid>
-        <!--fim grid principal-->
+        <!--corpo-->
+        <Border x:Name="border_corpo_window">
+            <Grid x:Name="grid_corpo_window">
+
+                <!--grid principal-->
+                <Grid x:Name="grid_principal" Margin="0,30,0,0">
+                    <Grid x:Name="grid_form" HorizontalAlignment="Left" Height="345" Margin="50,53,0,0" VerticalAlignment="Top" Width="687" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+                        <Grid x:Name="itensForm" HorizontalAlignment="Left" Height="185" VerticalAlignment="Top" Width="686" Background="#FFCFCFCF">
+                            <TextBox x:Name="txt_subCategoria" HorizontalAlignment="Left" Height="23" Margin="395,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Label x:Name="lbl_categoria" Content="Categoria" HorizontalAlignment="Left" Margin="275,112,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_unidadeMedida" Content="Unidade de Medida" HorizontalAlignment="Left" Margin="270,83,0,0" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_qtd" Height="23" Margin="112,143,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_valorVenda" Height="23" Margin="112,111,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_valorPago" Height="23" Margin="112,80,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_unidadeMedida" Height="23" Margin="395,82,171,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_nome" Height="23" Margin="112,47,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_idProduto" Height="23" Margin="112,14,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_descricao" Content="Descrição" HorizontalAlignment="Left" Margin="267,30,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_idProduto1" Content="Id Produto" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_idProduto" Content="Id Produto" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_nome" Content="Nome" HorizontalAlignment="Left" Margin="21,43,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_valorPago" Content="Valor Pago" HorizontalAlignment="Left" Margin="21,75,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_valorVenda" Content="Valor Venda" HorizontalAlignment="Left" Margin="21,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.539,-2.598"/>
+                            <Label x:Name="lbl_qtd" Content="Quantidade" HorizontalAlignment="Left" Margin="21,140,0,0" VerticalAlignment="Top"/>
+                            <RichTextBox x:Name="txtr_descricao" HorizontalAlignment="Left" Height="60" Margin="353,12,0,0" VerticalAlignment="Top" Width="293">
+                                <FlowDocument/>
+                            </RichTextBox>
+                            <Label x:Name="lbl_subCategoria" Content="SubCategoria" HorizontalAlignment="Left" Margin="272,144,0,0" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_categoria" HorizontalAlignment="Left" Height="23" Margin="395,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                        </Grid>
+                        <Grid x:Name="btn_form" HorizontalAlignment="Left" Height="70" Margin="302,256,0,0" VerticalAlignment="Top" Width="385" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+                            <Button x:Name="btn_salvar" Content="Salvar" HorizontalAlignment="Left" Margin="53,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_salvar_Click"/>
+                            <Button x:Name="btn_limpar" Content="Limpar" HorizontalAlignment="Left" Margin="152,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_limpar_Click"/>
+                            <Button x:Name="btn_sair" Content="Sair" HorizontalAlignment="Left" Margin="255,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_sair_Click"/>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+                <!--fim grid principal-->
+            </Grid>
+        </Border>
+        <!--corpo da janela-->
     </Grid>
     <!--fim Grid main-->
 </Window>

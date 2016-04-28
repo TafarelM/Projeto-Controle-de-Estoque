@@ -33,13 +33,13 @@ namespace Apresentacao_GUI
         //close
         private void btn_close_MouseLeave(object sender, MouseEventArgs e)
         {
-            btn_close.Opacity = 0.6;
+            btn_close.Opacity = 0.7;
         }
         private void btn_close_MouseMove(object sender, MouseEventArgs e)
         {
             btn_close.Opacity = 1;
         }
-        private void btn_close_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
@@ -47,17 +47,29 @@ namespace Apresentacao_GUI
         //minimizar
         private void btn_minimizer_MouseLeave(object sender, MouseEventArgs e)
         {
-            btn_minimizer.Opacity = 0.6;
+            btn_minimizer.Opacity = 0.7;
         }
         private void btn_minimizer_MouseMove(object sender, MouseEventArgs e)
         {
             btn_minimizer.Opacity = 1;
         }
-        private void btn_minimizer_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_minimizer_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
-        //fim CONFIG JANELA
+        //FIM CONFIG JANELA
 
+        //BTNS
+        private void btn_CadastrarProduto_Click(object sender, RoutedEventArgs e)
+        {
+            ManterProduto manterProduto = new ManterProduto();
+            manterProduto.ShowDialog();
+        }
+
+        private void btn_ConsultarProduto_Click(object sender, RoutedEventArgs e)
+        {
+            ConsultarProdutos consultarProdutos = new ConsultarProdutos();
+            consultarProdutos.ShowDialog();
+        }
     }
 }

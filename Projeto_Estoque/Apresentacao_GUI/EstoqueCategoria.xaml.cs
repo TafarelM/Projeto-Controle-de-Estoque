@@ -24,38 +24,40 @@ namespace Apresentacao_GUI
             InitializeComponent();
         }
 
+        //CONFIG DA JANELA
         //para pode arrastar a janela
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
         }
-
-        //fechar
-        private void image_close_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        //close
+        private void btn_close_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btn_close.Opacity = 0.7;
+        }
+        private void btn_close_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_close.Opacity = 1;
+        }
+        private void btn_close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-        private void img_close_MouseLeave(object sender, MouseEventArgs e)
-        {
-            img_close.Opacity = 0.6;
-        }
-        private void img_close_MouseMove(object sender, MouseEventArgs e)
-        {
-            img_close.Opacity = 1;
-        }
 
         //minimizar
-        private void image1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_minimizer_MouseLeave(object sender, MouseEventArgs e)
+        {
+            btn_minimizer.Opacity = 0.7;
+        }
+        private void btn_minimizer_MouseMove(object sender, MouseEventArgs e)
+        {
+            btn_minimizer.Opacity = 1;
+        }
+        private void btn_minimizer_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
-        private void imageMinimizar_MouseLeave(object sender, MouseEventArgs e)
-        {
-            img_minimizar.Opacity = 0.6;
-        }
-        private void img_minimizar_MouseMove(object sender, MouseEventArgs e)
-        {
-            img_minimizar.Opacity = 1;
-        }
+        //FIM CONFIG JANELA
+
     }
 }

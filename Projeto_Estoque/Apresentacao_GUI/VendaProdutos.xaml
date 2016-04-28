@@ -6,9 +6,46 @@
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
         Title="VendaProdutos" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown">
-    <Grid x:Name="grid_principal" RenderTransformOrigin="0.505,0.03">
-        <Rectangle x:Name="cabeca_janela" Fill="#FF6C85B2" Stroke="Black" StrokeThickness="0" Margin="0,0,0,562"/>
-        <Image x:Name="img_close" Margin="0,4,9,566" Source="img/close_on.png" RenderTransformOrigin="1.068,0.509" MouseLeftButtonDown="image_close_MouseLeftButtonDown" HorizontalAlignment="Right" Width="26" MouseLeave="img_close_MouseLeave" MouseMove="img_close_MouseMove"/>
-        <Image x:Name="img_minimizar" Margin="0,4,44,565" Source="img/minimizar_on.png" RenderTransformOrigin="-11.038,8.823" HorizontalAlignment="Right" Width="26" MouseLeftButtonDown="image1_MouseLeftButtonDown" MouseLeave="imageMinimizar_MouseLeave" MouseMove="img_minimizar_MouseMove"/>
+
+    <!--grind main-->
+    <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
+
+        <!--janela/window customizada-->
+        <Border x:Name="border_cabecalho_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
+            <Grid x:Name="grid_window">
+                <Grid x:Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
+                    <!--btn close-->
+                    <Button x:Name="btn_close" Width="18" Height="18" Margin="30,2,2,2" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.7" Click="btn_close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FFF13B05"/>
+                                    <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!--btn minimizar-->
+                    <Button x:Name="btn_minimizer" Width="18" Height="18" Margin="2,2,30,2" MouseLeave="btn_minimizer_MouseLeave" MouseMove="btn_minimizer_MouseMove" Opacity="0.7" Click="btn_minimizer_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FF23C72B"/>
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+        <!--FIM JANELA/WINDOW CUSTOMIZADA-->
+
+        <!--corpo-->
+        <Border x:Name="border_corpo_window">
+            <Grid x:Name="grid_corpo_window">
+            </Grid>
+        </Border>
     </Grid>
 </Window>

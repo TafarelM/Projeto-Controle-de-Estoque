@@ -6,58 +6,111 @@
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
         Title="Menu" Height="600" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    
     <!--grind main-->
     <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
-        <Grid x:Name="grid_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
-            <Grid Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
-                <Ellipse x:Name="btn_close" Fill="#FFF13B05" HorizontalAlignment="Right" Margin="0,2,2,0" Width="18" Height="18" VerticalAlignment="Top" MouseLeftButtonDown="btn_close_MouseLeftButtonDown" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.6"/>
-                <Ellipse x:Name="btn_minimizer" Fill="#FF23C72B" HorizontalAlignment="Left" Height="18" Margin="2,2,0,0" VerticalAlignment="Top" Width="18" MouseLeave="btn_minimizer_MouseLeave" MouseLeftButtonDown="btn_minimizer_MouseLeftButtonDown" MouseMove="btn_minimizer_MouseMove" Opacity="0.6"/>
-            </Grid>
-        </Grid>
-        <!--dashboard-->
-        <Grid x:Name="grid_dashboard" HorizontalAlignment="Left" Height="570" Margin="0,30,0,0" VerticalAlignment="Top" Width="200" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
-            
-            <!--info user-->
-            <Grid x:Name="info_user" HorizontalAlignment="Left" Height="199" Margin="20,42,0,0" VerticalAlignment="Top" Width="160" Background="#FFFFE8E8">
-                <Label x:Name="lbl_idUser" Content="Tafarel Mello" HorizontalAlignment="Left" Margin="30,0,0,55" VerticalAlignment="Bottom" RenderTransformOrigin="-0.26,-1.617" Width="100" FontFamily="Segoe UI Symbol" FontSize="14"/>
-                <Ellipse x:Name="foto_user" HorizontalAlignment="Center" Height="100" Margin="30,10,30,0" VerticalAlignment="Top" Width="100" StrokeThickness="2">
-                    <Ellipse.Stroke>
-                        <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                    </Ellipse.Stroke>
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="img/user.png"/>
-                    </Ellipse.Fill>
-                </Ellipse>
-                <Grid x:Name="grip_opc_user" HorizontalAlignment="Left" Height="30" Margin="30,155,0,0" VerticalAlignment="Top" Width="100" Background="#FFC8C2D3">
-                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="8,5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
-                        <Ellipse.Stroke>
-                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                        </Ellipse.Stroke>
-                    </Ellipse>
-                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="40,5,0,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
-                        <Ellipse.Stroke>
-                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                        </Ellipse.Stroke>
-                    </Ellipse>
-                    <Ellipse Fill="#FF2E8515" HorizontalAlignment="Left" Height="20" Margin="70,5,8,0" StrokeThickness="2" VerticalAlignment="Top" Width="20">
-                        <Ellipse.Stroke>
-                            <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
-                        </Ellipse.Stroke>
-                    </Ellipse>
+        
+        <!--janela/window customizada-->
+        <Border x:Name="border_cabecalho_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
+            <Grid x:Name="grid_window">
+                <Grid x:Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
+                    <!--btn close-->
+                    <Button x:Name="btn_close" Width="18" Height="18" Margin="30,2,2,2" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.7" Click="btn_close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FFF13B05"/>
+                                    <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!--btn minimizar-->
+                    <Button x:Name="btn_minimizer" Width="18" Height="18" Margin="2,2,30,2" MouseLeave="btn_minimizer_MouseLeave" MouseMove="btn_minimizer_MouseMove" Opacity="0.7" Click="btn_minimizer_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FF23C72B"/>
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </Grid>
             </Grid>
-            <!---->
-            
-            <!--btns-->
-            <Grid HorizontalAlignment="Left" Height="180" Margin="20,278,0,0" VerticalAlignment="Top" Width="160" Background="#FFEAB7B7">
-                <Button x:Name="btn_vendaProduto" Content="Venda Produto" HorizontalAlignment="Left" Margin="10,10,0,0" Width="140" VerticalAlignment="Top" Click="btn_VendaProduto_Click"/>
-                <Button x:Name="btn_categoriaProdutos" Content="Categoria Produtos" HorizontalAlignment="Left" Margin="10,64,0,2" Width="140" VerticalAlignment="Top" Click="btn_CategoriaProdutos_Click"/>
-                <Button x:Name="btn_itensVendidos" Content="Itens Vendidos" HorizontalAlignment="Left" Margin="10,37,0,2" Width="140" VerticalAlignment="Top" Click="btn_ItensVendidos_Click"/>
-                <Button x:Name="btn_ComprasProdutos" Content="Compras Produtos" HorizontalAlignment="Left" Margin="10,91,0,0" Width="140" VerticalAlignment="Top" Click="btn_ComprasProdutos_Click"/>
-            </Grid>
-            <!---->
+        </Border>
+        <!--FIM JANELA/WINDOW CUSTOMIZADA-->
+        
+        <!--corpo-->
+        <Border x:Name="border_corpo_window">
+            <Grid x:Name="grid_corpo_window">
+                <!--dashboard-->
+                <Grid x:Name="grid_dashboard" HorizontalAlignment="Left" Height="570" Margin="0,30,0,0" VerticalAlignment="Top" Width="200" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
 
-        </Grid>
-        <!--fim dashboard-->
-        </Grid>
+                    <!--info user-->
+                    <Grid x:Name="info_user" HorizontalAlignment="Left" Height="199" Margin="20,42,0,0" VerticalAlignment="Top" Width="160" Background="#FFFFE8E8">
+                        <Label x:Name="lbl_idUser" Content="Tafarel Mello" HorizontalAlignment="Left" Margin="30,0,0,55" VerticalAlignment="Bottom" RenderTransformOrigin="-0.26,-1.617" Width="100" FontFamily="Segoe UI Symbol" FontSize="14"/>
+                        <Ellipse x:Name="foto_user" HorizontalAlignment="Center" Height="100" Margin="30,10,30,0" VerticalAlignment="Top" Width="100" StrokeThickness="2">
+                            <Ellipse.Stroke>
+                                <SolidColorBrush Color="#FF040101" Opacity="0.8"/>
+                            </Ellipse.Stroke>
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="img/user.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Grid x:Name="grip_opc_user" HorizontalAlignment="Left" Height="30" Margin="30,155,0,0" VerticalAlignment="Top" Width="100" Background="#FFC8C2D3">
+                            <!--btn user perfil-->
+                            <Button x:Name="btn_userPerfil" Width="20" Height="20" Opacity="0.7" MouseMove="btn_userPerfil_MouseMove" MouseLeave="btn_userPerfil_MouseLeave" Click="btn_userPerfil_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <Ellipse Fill="#FF040101"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!--btn user config-->
+                            <Button x:Name="btn_userConfig" Width="20" Opacity="0.7" MouseMove="btn_userConfig_MouseMove" MouseLeave="btn_userConfig_MouseLeave" Margin="10,5,70,5" Click="btn_userConfig_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <Ellipse Fill="#FF040101"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!--btn user opcao-->
+                            <Button x:Name="btn_userOpcao" Width="20" Height="20" Opacity="0.7" MouseMove="btn_userOpcao_MouseMove" MouseLeave="btn_userOpcao_MouseLeave" Margin="70,5,10,5" Click="btn_userOpcao_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <Ellipse Fill="#FF040101"/>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!---->
+            
+                    <!--btns-->
+                    <Grid HorizontalAlignment="Left" Height="180" Margin="20,278,0,0" VerticalAlignment="Top" Width="160" Background="#FFEAB7B7">
+                        <Button x:Name="btn_vendaProduto" Content="Venda Produto" HorizontalAlignment="Left" Margin="10,10,0,0" Width="140" VerticalAlignment="Top" Click="btn_VendaProduto_Click"/>
+                        <Button x:Name="btn_categoriaProdutos" Content="Categoria Produtos" HorizontalAlignment="Left" Margin="10,64,0,2" Width="140" VerticalAlignment="Top" Click="btn_CategoriaProdutos_Click"/>
+                        <Button x:Name="btn_itensVendidos" Content="Itens Vendidos" HorizontalAlignment="Left" Margin="10,37,0,2" Width="140" VerticalAlignment="Top" Click="btn_ItensVendidos_Click"/>
+                        <Button x:Name="btn_ComprasProdutos" Content="Compras Produtos" HorizontalAlignment="Left" Margin="10,91,0,0" Width="140" VerticalAlignment="Top" Click="btn_ComprasProdutos_Click"/>
+                        <Button x:Name="btn_produto" Content="Produtos" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="140" Click="btn_produto_Click"/>
+                    </Grid>
+                    <!---->
+                </Grid>
+                <!--fim dashboard-->
+                </Grid>
+        </Border>
+    </Grid>
 </Window>

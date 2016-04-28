@@ -2,4 +2,3 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\ObjetoTr
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\ObjetoTransferencia_DTO\bin\Debug\ObjetoTransferencia_DTO.pdb
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\ObjetoTransferencia_DTO\obj\Debug\ObjetoTransferencia_DTO.dll
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\ObjetoTransferencia_DTO\obj\Debug\ObjetoTransferencia_DTO.pdb
-C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\ObjetoTransferencia_DTO\obj\Debug\ObjetoTransferencia_DTO.csprojResolveAssemblyReference.cache

@@ -1,0 +1,72 @@
+﻿<Window x:Class="Apresentacao_GUI.ConsultarProdutos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apresentacao_GUI"
+        mc:Ignorable="d"
+        Title="ConsultarProdutos" Height="600" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <!--grind main-->
+    <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">
+
+        <!--janela/window customizada-->
+        <Border x:Name="border_cabecalho_window" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Top" Width="800" Background="#FF7C98D3">
+            <Grid x:Name="grid_window">
+                <Grid x:Name="btn_window" Height="22" VerticalAlignment="Top" HorizontalAlignment="Right" Width="50" Margin="0,3,3,0">
+                    <!--btn close-->
+                    <Button x:Name="btn_close" Width="18" Height="18" Margin="30,2,2,2" MouseLeave="btn_close_MouseLeave" MouseMove="btn_close_MouseMove" Opacity="0.7" Click="btn_close_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FFF13B05"/>
+                                    <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!--btn minimizar-->
+                    <Button x:Name="btn_minimizer" Width="18" Height="18" Margin="2,2,30,2" MouseLeave="btn_minimizer_MouseLeave" MouseMove="btn_minimizer_MouseMove" Opacity="0.7" Click="btn_minimizer_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid>
+                                    <Ellipse Fill="#FF23C72B"/>
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+        <!--FIM JANELA/WINDOW CUSTOMIZADA-->
+
+        <!--corpo-->
+        <Border x:Name="border_corpo_window">
+            <Grid x:Name="grid_corpo_window">
+                <!--grid pricipal-->
+                <Grid Name="grid_principal" Margin="0,30,0,0">
+                    <Grid x:Name="grid_form" HorizontalAlignment="Left" Height="523" Margin="23,25,0,0" VerticalAlignment="Top" Width="756" Background="#FFB8AFAF">
+                        <Grid x:Name="grid_btns" Height="91" Margin="0,0,30,30" VerticalAlignment="Bottom" Background="#FFE0C4C4" HorizontalAlignment="Right" Width="590">
+                            <Button x:Name="btn_inserir" Content="Inserir" HorizontalAlignment="Left" Margin="12,35,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+                            <Button x:Name="btn_alterar" Content="Alterar" HorizontalAlignment="Left" Margin="133,35,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+                            <Button x:Name="btn_excluir" Content="Excluir" HorizontalAlignment="Left" Margin="249,35,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+                            <Button x:Name="btn_consultar" Content="Consultar" HorizontalAlignment="Left" Margin="368,35,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.847,0.53" Height="25"/>
+                            <Button x:Name="btn_sair" Content="Sair" HorizontalAlignment="Left" Margin="481,35,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.094,0.6" Height="25"/>
+                        </Grid>
+                        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="30,30,30,0" VerticalAlignment="Top" Height="345" Width="696" SelectionMode="Single">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ID Produto"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nome"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Descrição"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Valor Pago"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Valor Venda"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Quantidade"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
