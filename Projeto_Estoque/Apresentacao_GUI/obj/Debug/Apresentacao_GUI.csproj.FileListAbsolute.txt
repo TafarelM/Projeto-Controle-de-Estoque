@@ -1,7 +1,6 @@
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Apresentacao_GUI.exe.config
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Apresentacao_GUI.exe
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Apresentacao_GUI.pdb
-C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.csprojResolveAssemblyReference.cache
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\CompraProdutos.g.cs
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\ConsultarProdutos.g.cs
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\EstoqueCategoria.g.cs
