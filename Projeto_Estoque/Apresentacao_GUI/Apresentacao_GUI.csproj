@@ -187,6 +187,16 @@
   <ItemGroup>
     <Resource Include="img\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios_BLL\Negocios_BLL.csproj">
+      <Project>{648d4893-a1b0-4b7c-b36c-25517577b646}</Project>
+      <Name>Negocios_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia_DTO\ObjetoTransferencia_DTO.csproj">
+      <Project>{93ce1b33-c8fd-4f56-b50e-4f6508701490}</Project>
+      <Name>ObjetoTransferencia_DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

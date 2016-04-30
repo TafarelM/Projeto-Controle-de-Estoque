@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    class CompraDTO
+    public class CompraDTO
     {
-        public int id_compra { get; set; }
+        public int idCompra { get; set; }
         public DateTime data { get; set; }
-        public int n_fiscal { get; set; }
+        public int notaFiscal { get; set; }
         public float total { get; set; }
-        public int n_parcelas { get; set; }
+        public int n_Parcelas { get; set; }
         public int status { get; set; }
-        public int id_for { get; set; }
-        public int id_tpa { get; set; }
+        public int idFornecedor { get; set; }
+        public int idTipoPagamento { get; set; }
     }
 }

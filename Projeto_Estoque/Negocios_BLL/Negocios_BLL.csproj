@@ -39,7 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProdutoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessoBancoDados_DAL\AcessoBancoDados_DAL.csproj">
+      <Project>{eec8c8f9-9be7-465d-8d9e-0864e090c58a}</Project>
+      <Name>AcessoBancoDados_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia_DTO\ObjetoTransferencia_DTO.csproj">
+      <Project>{93ce1b33-c8fd-4f56-b50e-4f6508701490}</Project>
+      <Name>ObjetoTransferencia_DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

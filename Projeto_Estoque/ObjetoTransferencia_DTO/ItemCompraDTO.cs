@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    class ItemCompraDTO
+    public class ItemCompraDTO
     {
-        public int id_itc { get; set; }
+        public int idItemCompra { get; set; }
         public int qtd { get; set; }
         public float valor { get; set; }
-        public int id_com { get; set; }
-        public int id_produto { get; set; }
+        public int idCompra { get; set; }
+        public int idProduto { get; set; }
     }
 }

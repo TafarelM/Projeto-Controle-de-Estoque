@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    class TipoPagamentoDTO
+    public class TipoPagamentoDTO
     {
-        public int id_tipo_pagamento { get; set; }
+        public int idTipoPagamento { get; set; }
         public string nome { get; set; }
     }
 }

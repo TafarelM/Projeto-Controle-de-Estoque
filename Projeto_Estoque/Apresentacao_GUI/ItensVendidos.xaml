@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Apresentacao_GUI"
         mc:Ignorable="d"
-        Title="ItensVendidos" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        Title="ItensVendidos" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown" WindowStartupLocation="CenterScreen">
 
     <!--grind main-->
     <Grid x:Name="grid_main" HorizontalAlignment="Left" Height="600" Margin="0" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0,5">

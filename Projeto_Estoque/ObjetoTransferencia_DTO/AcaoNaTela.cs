@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class CategoriaDTO
+    public enum AcaoNaTela
     {
-        public int idCategoria { get; set; }
-        public string nome { get; set; }
+        Exlcuir = 0,
+        Inserir = 1,
+        Alterar = 2,
+        Consultar = 3
     }
 }

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    class ProdutoDTO
+    public class ProdutoDTO
     {
-        public int id_produto { get; set; }
+        public int idProduto { get; set; }
         public string nome { get; set; }
         public string descricao { get; set; }
         public Byte foto { get; set; }
-        public float valor_pago { get; set; }
-        public float valor_venda { get; set; }
+        public float valorPago { get; set; }
+        public float valorVenda { get; set; }
         public int qtd { get; set; }
-        public int id_umed { get; set; }
-        public int id_cat { get; set; }
-        public int id_scat { get; set; }
+        public int idUnidaMedida { get; set; }
+        public int idCategoria { get; set; }
+        public int idSubCategoria { get; set; }
     }
 }

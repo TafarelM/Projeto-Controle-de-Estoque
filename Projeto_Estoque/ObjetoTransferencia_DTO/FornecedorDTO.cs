@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    class FornecedorDTO
+    public class FornecedorDTO
     {
-        public int id_fornecedor { get; set; }
+        public int idFornecedor { get; set; }
         public string nome { get; set; }
-        public string r_social { get; set; }
+        public string r_Social { get; set; }
         public string ie { get; set; }
         public string cnpj { get; set; }
         public string cep { get; set; }
@@ -19,7 +19,7 @@ namespace ObjetoTransferencia_DTO
         public string fone { get; set; }
         public string cel { get; set; }
         public string email { get; set; }
-        public string end_numero { get; set; }
+        public string end_Numero { get; set; }
         public string cidade { get; set; }
         public string estado { get; set; }
     }

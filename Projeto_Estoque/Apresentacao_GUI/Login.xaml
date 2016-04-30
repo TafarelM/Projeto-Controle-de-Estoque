@@ -21,6 +21,7 @@
             <Setter Property="Rectangle.Height" Value="35"/>
         </Style>
 
+        <!--btn bootstrap-->
         <Style x:Key="btn" TargetType="Button">
             <Setter Property="FontFamily" Value="Helvetica Neue,Helvetica,Arial,sans-serif"/>
             <Setter Property="FontSize" Value="14"/>
@@ -253,7 +254,7 @@
     <Border x:Name="border_principal">
         <Grid x:Name="grid_principal" Background="#FFD6B6B6">
             <Grid x:Name="grid_login" Margin="110,0,0,110" Height="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="330" Background="#FFE6DBC0">
-                <Grid x:Name="grid_btns" Margin="10,140,110,10" Background="#FFF7EFEF">
+                <Grid x:Name="grid_btn" Margin="10,140,110,10" Background="#FFF7EFEF">
 
                     <StackPanel Margin="10,10,0,0" HorizontalAlignment="Left" Width="205">
                         <Button x:Name="btn_login" Style="{StaticResource btn-primary}" Content="Login" Margin="5,5,0,5" Height="35" HorizontalAlignment="Left" Width="175" VerticalAlignment="Top"/>

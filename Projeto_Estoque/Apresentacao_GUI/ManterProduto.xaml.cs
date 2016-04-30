@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+//add
+using Negocios_BLL;
+using ObjetoTransferencia_DTO;
+
+
 namespace Apresentacao_GUI
 {
     /// <summary>
@@ -62,6 +67,19 @@ namespace Apresentacao_GUI
         //BTNS
         private void btn_salvar_Click(object sender, RoutedEventArgs e)
         {
+            ProdutoDTO produto = new ProdutoDTO();
+
+            produto.idProduto = int.Parse(txt_idProduto.Text);
+            produto.nome = txt_nome.Text;
+            produto.valorPago = float.Parse(txt_valorPago.Text);
+            produto.valorVenda = float.Parse(txt_valorVenda.Text);
+            produto.qtd = int.Parse(txt_qtd.Text);
+            produto.descricao = txt_descricao.Text;
+            produto.idUnidaMedida = int.Parse(txt_unidadeMedida.Text);
+            produto.idCategoria = int.Parse(txt_categoria.Text);
+            produto.idSubCategoria = int.Parse(txt_subCategoria.Text);
+
+            ProdutoBLL produtoBLL = new ProdutoBLL();
 
         }
 
@@ -75,6 +93,9 @@ namespace Apresentacao_GUI
             this.Close();
         }
         //FIM BTNS
+
+
+
 
     }
 }
