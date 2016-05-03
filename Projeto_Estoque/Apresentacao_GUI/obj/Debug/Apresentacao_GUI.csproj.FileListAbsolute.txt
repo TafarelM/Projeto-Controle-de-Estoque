@@ -77,3 +77,8 @@ C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Ap
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\ObjetoTransferencia_DTO.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Negocios_BLL.pdb
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\ObjetoTransferencia_DTO.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Negocios_BLL.dll
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\ObjetoTransferencia_DTO.dll
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\Negocios_BLL.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\bin\Debug\ObjetoTransferencia_DTO.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_GUI\obj\Debug\Apresentacao_GUI.csprojResolveAssemblyReference.cache

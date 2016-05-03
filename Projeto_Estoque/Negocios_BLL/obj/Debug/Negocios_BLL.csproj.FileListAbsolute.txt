@@ -11,3 +11,8 @@ C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Ne
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\AcessoBancoDados_DAL.pdb
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\ObjetoTransferencia_DTO.pdb
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.csprojResolveAssemblyReference.cache
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\AcessoBancoDados_DAL.dll
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\ObjetoTransferencia_DTO.dll
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\AcessoBancoDados_DAL.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\ObjetoTransferencia_DTO.pdb
+C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.csprojResolveAssemblyReference.cache
