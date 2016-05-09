@@ -39,8 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoriaBLL.cs" />
+    <Compile Include="ClienteBLL.cs" />
+    <Compile Include="ClienteFisicoBLL.cs" />
+    <Compile Include="ClienteJuridicoBLL.cs" />
+    <Compile Include="CompraBLL.cs" />
+    <Compile Include="FornecedorBLL.cs" />
+    <Compile Include="ItemCompraBLL.cs" />
+    <Compile Include="ItemVendaBLL.cs" />
+    <Compile Include="ParcelaCompraBLL.cs" />
+    <Compile Include="ParcelaVendaBLL.cs" />
     <Compile Include="ProdutoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubcategoriaBLL.cs" />
+    <Compile Include="TipoPagamentoBLL.cs" />
+    <Compile Include="UnidadeMedidaBLL.cs" />
+    <Compile Include="VendaBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AcessoBancoDados_DAL\AcessoBancoDados_DAL.csproj">

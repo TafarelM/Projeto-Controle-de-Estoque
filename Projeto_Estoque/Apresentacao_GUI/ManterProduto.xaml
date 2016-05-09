@@ -50,13 +50,11 @@
                 <Grid x:Name="grid_principal" Margin="0,30,0,0">
                     <Grid x:Name="grid_form" HorizontalAlignment="Left" Height="345" Margin="50,53,0,0" VerticalAlignment="Top" Width="687" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
                         <Grid x:Name="itensForm" HorizontalAlignment="Left" Height="185" VerticalAlignment="Top" Width="686" Background="#FFCFCFCF">
-                            <TextBox x:Name="txt_subCategoria" HorizontalAlignment="Left" Height="23" Margin="395,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                            <Label x:Name="lbl_categoria" Content="Categoria" HorizontalAlignment="Left" Margin="275,78,0,0" VerticalAlignment="Top"/>
-                            <Label x:Name="lbl_unidadeMedida" Content="Unidade de Medida" HorizontalAlignment="Left" Margin="275,47,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_categoria" Content="Categoria" HorizontalAlignment="Left" Margin="275,110,0,0" VerticalAlignment="Top"/>
+                            <Label x:Name="lbl_unidadeMedida" Content="Unidade de Medida" HorizontalAlignment="Left" Margin="275,79,0,0" VerticalAlignment="Top"/>
                             <TextBox x:Name="txt_qtd" Height="23" Margin="112,143,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
                             <TextBox x:Name="txt_valorVenda" Height="23" Margin="112,111,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
                             <TextBox x:Name="txt_valorPago" Height="23" Margin="112,80,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
-                            <TextBox x:Name="txt_unidadeMedida" Height="23" Margin="395,47,171,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
                             <TextBox x:Name="txt_nome" Height="23" Margin="112,47,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
                             <TextBox x:Name="txt_idProduto" Height="23" Margin="112,14,454,0" TextWrapping="Wrap" Width="120" VerticalAlignment="Top"/>
                             <Label x:Name="lbl_descricao" Content="Descrição" HorizontalAlignment="Left" Margin="275,11,0,0" VerticalAlignment="Top"/>
@@ -65,14 +63,16 @@
                             <Label x:Name="lbl_valorPago" Content="Valor Pago" HorizontalAlignment="Left" Margin="21,75,0,0" VerticalAlignment="Top"/>
                             <Label x:Name="lbl_valorVenda" Content="Valor Venda" HorizontalAlignment="Left" Margin="21,107,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.539,-2.598"/>
                             <Label x:Name="lbl_qtd" Content="Quantidade" HorizontalAlignment="Left" Margin="21,140,0,0" VerticalAlignment="Top"/>
-                            <Label x:Name="lbl_subCategoria" Content="SubCategoria" HorizontalAlignment="Left" Margin="275,111,0,0" VerticalAlignment="Top"/>
-                            <TextBox x:Name="txt_categoria" HorizontalAlignment="Left" Height="23" Margin="395,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                            <TextBox x:Name="txt_descricao" HorizontalAlignment="Left" Height="23" Margin="395,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                            <Label x:Name="lbl_subCategoria" Content="SubCategoria" HorizontalAlignment="Left" Margin="275,143,0,0" VerticalAlignment="Top"/>
+                            <TextBox x:Name="txt_descricao" HorizontalAlignment="Left" Height="55" Margin="395,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+                            <ComboBox x:Name="cb_UnidadeMedida" HorizontalAlignment="Left" Margin="395,82,0,0" VerticalAlignment="Top" Width="120"/>
+                            <ComboBox x:Name="cb_Categoria" HorizontalAlignment="Left" Margin="395,113,0,0" VerticalAlignment="Top" Width="120"/>
+                            <ComboBox x:Name="cb_Subcategoria" HorizontalAlignment="Left" Margin="395,146,0,0" VerticalAlignment="Top" Width="120"/>
                         </Grid>
                         <Grid x:Name="btn_form" HorizontalAlignment="Left" Height="70" Margin="302,256,0,0" VerticalAlignment="Top" Width="385" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
                             <Button x:Name="btn_salvar" Content="Salvar" HorizontalAlignment="Left" Margin="53,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_salvar_Click"/>
                             <Button x:Name="btn_limpar" Content="Limpar" HorizontalAlignment="Left" Margin="152,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_limpar_Click"/>
-                            <Button x:Name="btn_sair" Content="Sair" HorizontalAlignment="Left" Margin="255,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_sair_Click"/>
+                            <Button x:Name="btn_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="255,21,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="btn_Cancelar_Click"/>
                         </Grid>
                     </Grid>
 

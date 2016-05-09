@@ -339,7 +339,7 @@
                             <Button x:Name="btn_ItensVendidos" Style="{StaticResource  btn-default}" Content="Itens Vendidos" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" Click="btn_ItensVendidos_Click" FontSize="12"/>
                             <Button x:Name="btn_ComprasProdutos" Style="{StaticResource  btn-default}" Content="Compras Produtos" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" Click="btn_ComprasProdutos_Click" FontSize="12"/>
                             <Button x:Name="btn_produto" Style="{StaticResource  btn-default}" Content="Produtos" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" Click="btn_produto_Click" FontSize="12"/>
-                            <Button x:Name="btn1" Style="{StaticResource  btn-default}" Content="" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" FontSize="12"/>
+                            <Button x:Name="btn1" Style="{StaticResource  btn-default}" Content="" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" FontSize="12" Click="btn1_Click"/>
                             <Button x:Name="btn2" Style="{StaticResource  btn-default}" Content="" Margin="5,5,0,5" Height="33" Width="145" VerticalAlignment="Top" FontSize="12"/>
                         </StackPanel>
                     </Grid>

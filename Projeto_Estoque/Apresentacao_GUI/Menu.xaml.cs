@@ -144,6 +144,12 @@ namespace Apresentacao_GUI
         {
             btn_userOpcao.Opacity = 0.7;
         }
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
         //FIM BTNS INF USUARIO
 
 

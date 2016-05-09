@@ -75,9 +75,9 @@ namespace Apresentacao_GUI
             produto.valorVenda = float.Parse(txt_valorVenda.Text);
             produto.qtd = int.Parse(txt_qtd.Text);
             produto.descricao = txt_descricao.Text;
-            produto.idUnidaMedida = int.Parse(txt_unidadeMedida.Text);
-            produto.idCategoria = int.Parse(txt_categoria.Text);
-            produto.idSubCategoria = int.Parse(txt_subCategoria.Text);
+            produto.idUnidaMedida = int.Parse(cb_UnidadeMedida.Text);
+            produto.idCategoria = int.Parse(cb_Categoria.Text);
+            produto.idSubCategoria = int.Parse(cb_Subcategoria.Text);
 
             ProdutoBLL produtoBLL = new ProdutoBLL();
 
@@ -88,7 +88,7 @@ namespace Apresentacao_GUI
 
         }
 
-        private void btn_sair_Click(object sender, RoutedEventArgs e)
+        private void btn_Cancelar_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

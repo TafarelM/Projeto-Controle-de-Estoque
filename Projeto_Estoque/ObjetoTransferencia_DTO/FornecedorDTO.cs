@@ -10,7 +10,7 @@ namespace ObjetoTransferencia_DTO
     {
         public int idFornecedor { get; set; }
         public string nome { get; set; }
-        public string r_Social { get; set; }
+        public string rSocial { get; set; }
         public string ie { get; set; }
         public string cnpj { get; set; }
         public string cep { get; set; }

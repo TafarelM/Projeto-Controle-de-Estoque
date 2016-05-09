@@ -43,6 +43,8 @@
     <Compile Include="CategoriaDTO.cs" />
     <Compile Include="ClienteColecao.cs" />
     <Compile Include="ClienteDTO.cs" />
+    <Compile Include="ClienteFisicoDTO.cs" />
+    <Compile Include="ClienteJuridicoDTO.cs" />
     <Compile Include="CompraDTO.cs" />
     <Compile Include="FornecedorDTO.cs" />
     <Compile Include="ItemCompraDTO.cs" />

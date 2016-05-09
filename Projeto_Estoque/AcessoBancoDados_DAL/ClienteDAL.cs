@@ -47,10 +47,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("idCliente", cliente.idCliente);
                 acessoDadosSqlServer.AdicionarParametros("@nome", cliente.nome);
-                acessoDadosSqlServer.AdicionarParametros("@dataNascimento", cliente.dataNascimento);
-                acessoDadosSqlServer.AdicionarParametros("@sexo", cliente.sexo);
-                acessoDadosSqlServer.AdicionarParametros("@limiteCompra", cliente.limiteCompra);
-                //executa e manipula
+                //executa e manipulação
                 string idCliente = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "uspClienteAlterar").ToString();
                 return idCliente;
             }
@@ -97,16 +94,13 @@ namespace AcessoBancoDados_DAL
                 foreach (DataRow linha in dataTableCliente.Rows)
                 {
                     //criar um cliente vazio e colocar os dados da linha nele e depois adiciona ele na colecao
-                    Cliente cliente = new Cliente();
+                    ClienteDTO cliente = new ClienteDTO();
                     //
                     cliente.idCliente = Convert.ToInt32(linha["IdCliente"]);
                     cliente.nome = Convert.ToString(linha["Nome"]);
-                    cliente.dataNascimento = Convert.ToDateTime(linha["DataNascimento"]);
-                    cliente.sexo = Convert.ToBoolean(linha["Sexo"]);
-                    cliente.limiteCompra = Convert.ToDecimal(linha["LimiteCompra"]);
 
                     //adiciona os dados de cliente na clienteColecao
-                    clienteColecao.Add(cliente);
+                    //clienteColecao.Add(cliente);
                 }
 
                 //retorna a coleção de crientes que foi encotrada no banco
@@ -136,16 +130,14 @@ namespace AcessoBancoDados_DAL
                 foreach (DataRow linha in dataTableCliente.Rows)
                 {
                     //
-                    Cliente cliente = new Cliente();
+                    ClienteDTO cliente = new ClienteDTO();
 
                     cliente.idCliente = Convert.ToInt32(linha["IdCliente"]);
                     cliente.nome = Convert.ToString(linha["Nome"]);
-                    cliente.dataNascimento = Convert.ToDateTime(linha["DataNascimento"]);
-                    cliente.sexo = Convert.ToBoolean(linha["Sexo"]);
-                    cliente.limiteCompra = Convert.ToDecimal(linha["LimiteCompra"]);
+
 
                     //adiciona a coleção
-                    clienteColecao.Add(cliente);
+                    //clienteColecao.Add(cliente);
                 }
 
                 return clienteColecao;

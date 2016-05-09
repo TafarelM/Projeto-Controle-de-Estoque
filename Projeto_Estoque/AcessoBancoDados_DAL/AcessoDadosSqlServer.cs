@@ -36,7 +36,7 @@ namespace AcessoBancoDados_DAL
 
 
 
-        //PERSISTÊNCIA - INSERIR, ALTERAR, EXLUCIR
+        //PERSISTÊNCIA - INSERIR, ALTERAR, EXCLUIR
         public object ExecutarManipulacao(CommandType commandType, string nomeStoredProcedureOuTextoSql)
         {
             //trantando erro

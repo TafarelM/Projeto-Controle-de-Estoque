@@ -62,6 +62,9 @@
                                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Valor Pago"/>
                                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Valor Venda"/>
                                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Quantidade"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Unidade Medida"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Categoria"/>
+                                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Subcategoria"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </Grid>
