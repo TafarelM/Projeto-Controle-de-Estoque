@@ -181,10 +181,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\close_on.png" />
-    <Resource Include="img\minimizar_on.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="img\user.png" />
   </ItemGroup>
   <ItemGroup>
