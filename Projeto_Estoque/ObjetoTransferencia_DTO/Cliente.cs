@@ -19,6 +19,6 @@ namespace ObjetoTransferencia_DTO
         public string email { get; set; }
         public string cep { get; set; }
         public string descricao { get; set; }
-        public int tipoCliente { get; set; }
+        public string tipoCliente { get; set; }
     }
 }

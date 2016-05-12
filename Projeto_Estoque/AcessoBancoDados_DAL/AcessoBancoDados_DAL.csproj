@@ -41,7 +41,6 @@
   <ItemGroup>
     <Compile Include="AcessoDadosSqlServer.cs" />
     <Compile Include="CategoriaDAL.cs" />
-    <Compile Include="ClienteDAL.cs" />
     <Compile Include="ClienteFisicoDAL.cs" />
     <Compile Include="ClienteJuridicoDAL.cs" />
     <Compile Include="CompraDAL.cs" />

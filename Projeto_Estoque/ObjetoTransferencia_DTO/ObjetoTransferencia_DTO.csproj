@@ -42,7 +42,6 @@
     <Compile Include="AcaoNaTela.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="CategoriaColecao.cs" />
-    <Compile Include="ClienteColecao.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="ClienteFisico.cs" />
     <Compile Include="ClienteFisicoColecao.cs" />
