@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class ProdutoDTO
+    public class Produto
     {
         public int idProduto { get; set; }
         public string nome { get; set; }

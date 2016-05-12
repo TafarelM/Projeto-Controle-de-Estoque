@@ -8,5 +8,6 @@ namespace Negocios_BLL
 {
     public class CompraBLL
     {
+
     }
 }

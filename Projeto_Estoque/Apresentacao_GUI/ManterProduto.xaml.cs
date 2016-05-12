@@ -67,7 +67,7 @@ namespace Apresentacao_GUI
         //BTNS
         private void btn_salvar_Click(object sender, RoutedEventArgs e)
         {
-            ProdutoDTO produto = new ProdutoDTO();
+            Produto produto = new Produto();
 
             produto.idProduto = int.Parse(txt_idProduto.Text);
             produto.nome = txt_nome.Text;

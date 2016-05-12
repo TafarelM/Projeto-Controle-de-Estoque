@@ -40,23 +40,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcaoNaTela.cs" />
-    <Compile Include="CategoriaDTO.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="CategoriaColecao.cs" />
     <Compile Include="ClienteColecao.cs" />
-    <Compile Include="ClienteDTO.cs" />
-    <Compile Include="ClienteFisicoDTO.cs" />
-    <Compile Include="ClienteJuridicoDTO.cs" />
-    <Compile Include="CompraDTO.cs" />
-    <Compile Include="FornecedorDTO.cs" />
-    <Compile Include="ItemCompraDTO.cs" />
-    <Compile Include="ItemVendaDTO.cs" />
-    <Compile Include="ParcelaCompraDTO.cs" />
-    <Compile Include="ParcelaVendaDTO.cs" />
-    <Compile Include="ProdutoDTO.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteFisico.cs" />
+    <Compile Include="ClienteFisicoColecao.cs" />
+    <Compile Include="ClienteJuridico.cs" />
+    <Compile Include="ClienteJuridicoColecao.cs" />
+    <Compile Include="Compra.cs" />
+    <Compile Include="CompraColecao.cs" />
+    <Compile Include="Fornecedor.cs" />
+    <Compile Include="FornecedorColecao.cs" />
+    <Compile Include="ItemCompra.cs" />
+    <Compile Include="ItemCompraColecao.cs" />
+    <Compile Include="ItemVenda.cs" />
+    <Compile Include="ItemVendaColecao.cs" />
+    <Compile Include="ParcelaCompra.cs" />
+    <Compile Include="ParcelaCompraColecao.cs" />
+    <Compile Include="ParcelaVenda.cs" />
+    <Compile Include="ParcelaVendaColecao.cs" />
+    <Compile Include="Produto.cs" />
+    <Compile Include="ProdutoColecao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubcategoriaDTO.cs" />
-    <Compile Include="TipoPagamentoDTO.cs" />
-    <Compile Include="UnidadeMedidaDTO.cs" />
-    <Compile Include="VendaDTO.cs" />
+    <Compile Include="Subcategoria.cs" />
+    <Compile Include="SubcategoriaColecao.cs" />
+    <Compile Include="TipoPagamento.cs" />
+    <Compile Include="TipoPagamentoColecao.cs" />
+    <Compile Include="UnidadeMedida.cs" />
+    <Compile Include="UnidadeMedidaColecao.cs" />
+    <Compile Include="Venda.cs" />
+    <Compile Include="VendaColecao.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

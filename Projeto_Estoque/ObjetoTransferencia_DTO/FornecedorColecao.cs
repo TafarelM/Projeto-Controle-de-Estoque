@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class ClienteFisicoDTO
+    public class FornecedorColecao : List<Fornecedor>
     {
     }
 }

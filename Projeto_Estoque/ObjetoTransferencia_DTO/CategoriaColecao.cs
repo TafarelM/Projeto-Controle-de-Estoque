@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class ClienteJuridicoDTO
+    public class CategoriaColecao: List<Categoria>
     {
     }
 }

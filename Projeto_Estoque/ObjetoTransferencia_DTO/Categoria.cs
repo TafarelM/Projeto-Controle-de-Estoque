@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class ClienteColecao : List<Cliente>
+    public class Categoria
     {
+        public int idCategoria { get; set; }
+        public string nome { get; set; }
+        public string descricao { get; set; }
     }
 }

@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObjetoTransferencia_DTO
 {
-    public class UnidadeMedidaDTO
+    public class ClienteFisicoColecao : List<ClienteFisico>
     {
-        public int idUnidaMedida { get; set; }
-        public string nome { get; set; }
     }
 }
