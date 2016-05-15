@@ -59,6 +59,7 @@
     <Compile Include="SubcategoriaDAL.cs" />
     <Compile Include="TipoPagamentoDAL.cs" />
     <Compile Include="UnidadeMedidaDAL.cs" />
+    <Compile Include="UsuarioDAL.cs" />
     <Compile Include="VendaDAL.cs" />
   </ItemGroup>
   <ItemGroup>

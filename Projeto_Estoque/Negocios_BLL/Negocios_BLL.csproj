@@ -54,6 +54,7 @@
     <Compile Include="SubcategoriaBLL.cs" />
     <Compile Include="TipoPagamentoBLL.cs" />
     <Compile Include="UnidadeMedidaBLL.cs" />
+    <Compile Include="UsuarioBLL.cs" />
     <Compile Include="VendaBLL.cs" />
   </ItemGroup>
   <ItemGroup>

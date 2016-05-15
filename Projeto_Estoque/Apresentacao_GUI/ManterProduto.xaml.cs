@@ -71,13 +71,13 @@ namespace Apresentacao_GUI
 
             produto.idProduto = int.Parse(txt_idProduto.Text);
             produto.nome = txt_nome.Text;
-            produto.valorPago = float.Parse(txt_valorPago.Text);
-            produto.valorVenda = float.Parse(txt_valorVenda.Text);
-            produto.qtd = int.Parse(txt_qtd.Text);
+            produto.valorPago = decimal.Parse(txt_valorPago.Text);
+            produto.valorVenda = decimal.Parse(txt_valorVenda.Text);
+            produto.quantidade = int.Parse(txt_qtd.Text);
             produto.descricao = txt_descricao.Text;
             produto.idUnidaMedida = int.Parse(cb_UnidadeMedida.Text);
             produto.idCategoria = int.Parse(cb_Categoria.Text);
-            produto.idSubCategoria = int.Parse(cb_Subcategoria.Text);
+            produto.idSubcategoria = int.Parse(cb_Subcategoria.Text);
 
             ProdutoBLL produtoBLL = new ProdutoBLL();
 

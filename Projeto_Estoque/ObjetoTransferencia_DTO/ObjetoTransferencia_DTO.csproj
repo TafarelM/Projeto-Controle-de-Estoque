@@ -68,6 +68,7 @@
     <Compile Include="TipoPagamentoColecao.cs" />
     <Compile Include="UnidadeMedida.cs" />
     <Compile Include="UnidadeMedidaColecao.cs" />
+    <Compile Include="Usuario.cs" />
     <Compile Include="Venda.cs" />
     <Compile Include="VendaColecao.cs" />
   </ItemGroup>
