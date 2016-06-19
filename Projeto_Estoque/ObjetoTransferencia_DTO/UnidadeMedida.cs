@@ -8,7 +8,7 @@ namespace ObjetoTransferencia_DTO
 {
     public class UnidadeMedida
     {
-        public int idUnidaMedida { get; set; }
+        public int idUnidadeMedida { get; set; }
         public string nome { get; set; }
         public string descricao { get; set; }
     }

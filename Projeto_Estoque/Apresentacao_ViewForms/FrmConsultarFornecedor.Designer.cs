@@ -39,7 +39,7 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnInserir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewFornecedor = new System.Windows.Forms.DataGridView();
             this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNomeFantasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColRazaoSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +58,7 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -79,6 +79,7 @@
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 
@@ -161,18 +162,18 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dataGridViewFornecedor);
             this.panel1.Location = new System.Drawing.Point(12, 77);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(758, 360);
             this.panel1.TabIndex = 3;
             // 
-            // dataGridView1
+            // dataGridViewFornecedor
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewFornecedor.AllowUserToAddRows = false;
+            this.dataGridViewFornecedor.AllowUserToDeleteRows = false;
+            this.dataGridViewFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColID,
             this.ColNomeFantasia,
             this.ColRazaoSocial,
@@ -188,13 +189,13 @@
             this.ColCelular,
             this.ColEmail,
             this.ColDescricao});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(758, 360);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewFornecedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewFornecedor.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewFornecedor.Name = "dataGridViewFornecedor";
+            this.dataGridViewFornecedor.ReadOnly = true;
+            this.dataGridViewFornecedor.RowTemplate.Height = 24;
+            this.dataGridViewFornecedor.Size = new System.Drawing.Size(758, 360);
+            this.dataGridViewFornecedor.TabIndex = 0;
             // 
             // ColID
             // 
@@ -300,7 +301,7 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,7 +319,7 @@
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnInserir;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewFornecedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNomeFantasia;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColRazaoSocial;

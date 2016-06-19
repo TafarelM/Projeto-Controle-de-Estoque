@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
@@ -68,6 +68,7 @@
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 
@@ -160,8 +161,8 @@
             // 
             this.dataGridViewCategoria.AllowUserToAddRows = false;
             this.dataGridViewCategoria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewCategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewCategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColId,
@@ -179,12 +180,15 @@
             // 
             // ColId
             // 
+            this.ColId.DataPropertyName = "idCategoria";
             this.ColId.HeaderText = "ID";
             this.ColId.Name = "ColId";
             this.ColId.ReadOnly = true;
             // 
             // ColNome
             // 
+            this.ColNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColNome.DataPropertyName = "nome";
             this.ColNome.HeaderText = "Nome";
             this.ColNome.MinimumWidth = 20;
             this.ColNome.Name = "ColNome";
@@ -192,6 +196,8 @@
             // 
             // ColDescricao
             // 
+            this.ColDescricao.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColDescricao.DataPropertyName = "descricao";
             this.ColDescricao.HeaderText = "Descrição";
             this.ColDescricao.MinimumWidth = 20;
             this.ColDescricao.Name = "ColDescricao";

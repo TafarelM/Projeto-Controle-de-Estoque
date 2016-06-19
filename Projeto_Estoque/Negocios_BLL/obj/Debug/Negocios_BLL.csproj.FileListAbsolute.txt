@@ -9,8 +9,6 @@ C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios
 C:\Users\L\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\obj\Debug\Negocios_BLL.pdb
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\Negocios_BLL.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\Negocios_BLL.pdb
-C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\Negocios_BLL.dll.CodeAnalysisLog.xml
-C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\Negocios_BLL.dll.lastcodeanalysissucceeded
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\AcessoBancoDados_DAL.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\ObjetoTransferencia_DTO.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Negocios_BLL\bin\Debug\AcessoBancoDados_DAL.pdb

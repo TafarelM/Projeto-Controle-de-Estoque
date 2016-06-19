@@ -27,7 +27,7 @@ namespace AcessoBancoDados_DAL
                 acessoDadosSqlServer.AdicionarParametros("@descricao", categoria.descricao);
                 //executa a manipulção
                 //pode aceitar procedure ou comando sql
-                string idCategoria = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
+                string idCategoria = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "INSERT INTO categoria (nome, descricao) values (@nome, @descricao); select @@IDENTITY;").ToString();
                 return idCategoria;
             }
             catch (Exception exception)
@@ -53,7 +53,7 @@ namespace AcessoBancoDados_DAL
                 acessoDadosSqlServer.AdicionarParametros("@descricao", categoria.descricao);
                 //executa e manipula
                 //pode aceitar procedure ou comando sql
-                string idCategoria = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
+                string idCategoria = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE categoria SET nome = @nome, descricao = @descricao WHERE idCategoria = @idCategoria; SELECT @Idcategoria;").ToString();
                 return idCategoria;
             }
             catch (Exception exception)
@@ -73,8 +73,8 @@ namespace AcessoBancoDados_DAL
                 acessoDadosSqlServer.AdicionarParametros("@idCategoria", categoria.idCategoria);
                 //chamar a procedure para manipulação
                 //pode aceitar procedure ou comando sql
-                string idCliente = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
-                return idCliente;
+                string idCategoria = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "DELETE FROM categoria WHERE idCategoria = @idCategoria; SELECT @Idcategoria;").ToString();
+                return idCategoria;
             }
             catch (Exception exception)
             {
@@ -94,7 +94,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("@nome", nome);
                 //manipulando dados e coloca dentro de um DataTable
-                DataTable dataTableCategoria = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "");
+                DataTable dataTableCategoria = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT * FROM categoria WHERE nome like '%' + @nome + '%'");
 
                 //percorrer o DataTable e transformar em uma coleção de clientes
                 //cada linha do DataTable é uma cliente
@@ -135,7 +135,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("@idCategoria", idCategoria);
                 //executar a consulta no banco e guarda o conteudo em um DataTable
-                DataTable dataTableCategoria = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "");
+                DataTable dataTableCategoria = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT * FROM  categoria WHERE idCategoria = @idCategoria");
                 //
                 foreach (DataRow linha in dataTableCategoria.Rows)
                 {

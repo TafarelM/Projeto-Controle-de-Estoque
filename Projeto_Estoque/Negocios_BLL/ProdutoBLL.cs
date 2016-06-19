@@ -47,5 +47,7 @@ namespace Negocios_BLL
             ProdutoDAL produtoDAL = new ProdutoDAL();
             return produtoDAL.ConsultaId(idProduto);
         }
+
+//end
     }
 }

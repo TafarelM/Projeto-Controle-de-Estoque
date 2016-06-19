@@ -33,7 +33,7 @@ namespace AcessoBancoDados_DAL
                 acessoDadosSqlServer.AdicionarParametros("@idSubcategoria", produto.idSubcategoria);
 
                 //executa a manipulção
-                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
+                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "insert into produto (nome, pro_valorPago, valorVenda, quantidade, descricao, idUnidadeMedida, idCategoria, idSubcategoria)values (@nome, @valorPago, @valorVenda, @quantidade, @descricao, @idUnidadeMedida, @idCategoria, @idSubcategoria); select @IDENTITY").ToString();
                 return idProduto;
             }
             catch (Exception exception)
@@ -63,7 +63,8 @@ namespace AcessoBancoDados_DAL
                 acessoDadosSqlServer.AdicionarParametros("@idCategoria", produto.idCategoria);
                 acessoDadosSqlServer.AdicionarParametros("@idSubcategoria", produto.idSubcategoria);
                 //executa e manipula
-                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
+                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "UPDATE Produto SET nome = (@nome), descricao = (@descricao), valorPago = (@valorPago), valorVenda = (@valorVenda), quantidade = (@quantidade), idUnidadeMedida = (@idUnidadeMedida), idCategoria = (@idCategoria), " +
+                "idSubcategoria = (@idSubcategoria) WHERE idProduto = (@idProduto)").ToString();
                 return idProduto;
             }
             catch (Exception exception)
@@ -81,7 +82,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("idProduto", produto.idProduto);
                 //chamar a procedure para manipulação
-                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.StoredProcedure, "").ToString();
+                string idProduto = acessoDadosSqlServer.ExecutarManipulacao(CommandType.Text, "delete from produto where idProduto = @idProduto").ToString();
                 return idProduto;
             }
             catch (Exception exception)
@@ -101,7 +102,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("@nome", nome);
                 //manipulando dados e coloca dentro de um DataTable
-                DataTable dataTableProduto = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "");
+                DataTable dataTableProduto = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT produto.idProduto, produto.nome, produto.valorPago, produto.valorVenda, produto.quantidade,  produto.descricao, unidadeMedida.nome, categoria.nome, subcategoria.nome FROM produto INNER JOIN unidadeMedida ON produto.idUnidadeMedida = unidadeMedida.idUnidadeMedida INNER JOIN categoria ON produto.idCategoria = categoria.idCategoria INNER JOIN subcategoria ON produto.idSubcategoria = subcategoria.idSubcategoria WHERE produto.nome like '%' + @Nome + '%'");
 
                 //percorrer o DataTable e transformar em uma coleção de clientes
                 //cada linha do DataTable é uma cliente
@@ -147,7 +148,7 @@ namespace AcessoBancoDados_DAL
                 //adicionar parametros
                 acessoDadosSqlServer.AdicionarParametros("@idProduto", idProduto);
                 //executar a consulta no banco e guarda o conteudo em um DataTable
-                DataTable dataTableProduto = acessoDadosSqlServer.ExecutarConsulta(CommandType.StoredProcedure, "");
+                DataTable dataTableProduto = acessoDadosSqlServer.ExecutarConsulta(CommandType.Text, "SELECT * FROM produto WHERE (idProduto)");
                 //
                 foreach (DataRow linha in dataTableProduto.Rows)
                 {

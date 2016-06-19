@@ -1,7 +1,6 @@
+C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Apresentacao_ViewForms.exe.config
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Apresentacao_ViewForms.exe
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Apresentacao_ViewForms.pdb
-C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Apresentacao_ViewForms.exe.CodeAnalysisLog.xml
-C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Apresentacao_ViewForms.exe.lastcodeanalysissucceeded
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\Negocios_BLL.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\ObjetoTransferencia_DTO.dll
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\bin\Debug\AcessoBancoDados_DAL.dll
@@ -18,6 +17,8 @@ C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Ap
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmManterCliente.resources
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmManterFornecedor.resources
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmManterProduto.resources
+C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmManterSubcategoria.resources
+C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmManterUnidadeMedida.resources
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.FrmMenu.resources
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.Properties.Resources.resources
 C:\Users\Tafarel\Documents\GitHub\Projeto-Controle-de-Estoque\Projeto_Estoque\Apresentacao_ViewForms\obj\Debug\Apresentacao_ViewForms.csproj.GenerateResource.Cache

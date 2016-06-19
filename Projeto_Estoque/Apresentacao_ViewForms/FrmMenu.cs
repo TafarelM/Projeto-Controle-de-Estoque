@@ -26,20 +26,29 @@ namespace Apresentacao_ViewForms
             frmLogin.Show();
         }
 
+        //CONSUTAR PRODUTO
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmManterProduto frmProduto = new FrmManterProduto(AcaoNaTela.Inserir, null);
-            frmProduto.ShowDialog();
+            //FrmManterProduto frmMantertarProduto = new FrmManterProduto();
+            //frmMantertarProduto.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FrmManterCliente frmCliente = new FrmManterCliente();
+            frmCliente.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            FrmManterCategoria frmManterCategoria = new FrmManterCategoria(AcaoNaTela.Inserir, null);
+            frmManterCategoria.ShowDialog();
+        }
 
+        private void btnConsultarCategoria_Click(object sender, EventArgs e)
+        {
+            FrmConsultarCategoria frmConsultarCategoria = new FrmConsultarCategoria();
+            frmConsultarCategoria.ShowDialog();
         }
     }
 }
